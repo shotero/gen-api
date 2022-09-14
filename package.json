@@ -37,7 +37,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shotero/model"
+    "url": "https://github.com/shotero/gen-model"
   },
   "scripts": {
     "dev": "node index.js",

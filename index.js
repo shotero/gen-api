@@ -255,7 +255,7 @@ function generateSchema(table, config, filepath) {
   }
 }
 
-async function getSchemas(override = {}) {
+async function generateModel(override = {}) {
   const config = Object.assign({}, modelConfig.config, override);
   const schemas = config.schemas.map((i) => i.name);
   const db = await pgStructure.default(
@@ -293,6 +293,4 @@ async function getSchemas(override = {}) {
   return collection;
 }
 
-getSchemas();
-
-export { getSchemas };
+export { generateModel };
