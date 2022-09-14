@@ -1,0 +1,65 @@
+{
+  "name": "@shotero/gen-model",
+  "description": "ObjectionJS model generator",
+  "type": "module",
+  "version": "0.0.1",
+  "author": "shotero <lemon.chiffon@shotero.com> (https://shotero.com)",
+  "bugs": {
+    "url": "https://github.com/shotero/gen-model/issues",
+    "email": "lemon.chiffon@shotero.com"
+  },
+  "contributors": [
+    "shotero <lemon.chiffon@shotero.com> (https://shotero.com)"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "homepage": "https://github.com/shotero/gen-model",
+  "keywords": [
+    "postgresql",
+    "db",
+    "objectionjs"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shotero/model"
+  },
+  "scripts": {
+    "dev": "node index.js",
+    "lint": "eslint",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "test": "NODE_ENV=test ava"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@shotero/gen-schema": "^0.0.1",
+    "cosmiconfig": "^7.0.1",
+    "pg-structure": "^7.13.0",
+    "pluralize": "^8.0.0"
+  }
+}
