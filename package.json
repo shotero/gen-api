@@ -2,7 +2,7 @@
   "name": "@shotero/gen-model",
   "description": "ObjectionJS model generator",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "shotero <lemon.chiffon@shotero.com> (https://shotero.com)",
   "bugs": {
     "url": "https://github.com/shotero/gen-model/issues",
