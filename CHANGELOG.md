@@ -1,3 +1,12 @@
+## [0.1.5](https://github.com/shotero/gen-api/compare/v0.1.4...v0.1.5) (2022-09-20)
+
+
+### Bug Fixes
+
+* use full path of the config ([16e19b2](https://github.com/shotero/gen-api/commit/16e19b262732bd8fe4078adc5fee75621b1c3da7))
+
+
+
 ## [0.1.4](https://github.com/shotero/gen-api/compare/v0.1.3...v0.1.4) (2022-09-20)
 
 
