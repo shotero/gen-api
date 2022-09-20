@@ -2,7 +2,7 @@
   "name": "@shotero/gen-api",
   "description": "ObjectionJS model and api generator from database",
   "type": "module",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "shotero <lemon.chiffon@shotero.com> (https://shotero.com)",
   "bugs": {
     "url": "https://github.com/shotero/gen-api/issues",

@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/shotero/gen-api/compare/v0.1.5...v0.1.6) (2022-09-20)
+
+
+### Bug Fixes
+
+* use correct searchpath ([5405c08](https://github.com/shotero/gen-api/commit/5405c0809b8741521c2d7001f98d05444038b68d))
+
+
+
 ## [0.1.5](https://github.com/shotero/gen-api/compare/v0.1.4...v0.1.5) (2022-09-20)
 
 
