@@ -255,7 +255,7 @@ function generateSchema(table, config, filepath) {
   }
 }
 
-async function generateModel(override = {}) {
+async function generate(override = {}) {
   const config = Object.assign({}, modelConfig.config, override);
   const schemas = config.schemas.map((i) => i.name);
   const db = await pgStructure.default(
@@ -285,12 +285,16 @@ async function generateModel(override = {}) {
       }
       generateSchema(table, config, `${dir}/schema.json`);
       generateModel(table, `${dir}/model.js`, resource);
-      generateController(`${dir}/controller.js`, resource);
-      generateRouter(`${dir}/index.js`, resource);
+      if (config.generate.controller) {
+        generateController(`${dir}/controller.js`, resource);
+      }
+      if (config.generate.route) {
+        generateRouter(`${dir}/index.js`, resource);
+      }
     }
   }
 
   return collection;
 }
 
-export { generateModel };
+export { generate };
