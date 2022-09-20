@@ -10,8 +10,8 @@ import { prettierConfig, generatorConfig } from './config.js';
 import { getEntity } from '@shotero/gen-schema';
 
 // load from import path
-const writeRoot = generatorConfig.path.write;
-const importRoot = generatorConfig.path.import;
+const writeRoot = generatorConfig.config.path.write;
+const importRoot = generatorConfig.config.path.import;
 
 function write(path, content) {
   fs.writeFile(path, content, (err) => {
