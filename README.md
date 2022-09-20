@@ -25,6 +25,8 @@ https://github.com/shotero/mates-backend
 
 ## Configuration
 
+> .generatorrc.js
+
 ```js
 module.exports = {
   baseUrl: 'https://myproject.com',

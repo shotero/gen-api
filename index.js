@@ -6,12 +6,12 @@ import pgStructure from 'pg-structure';
 import pluralize from 'pluralize';
 import prettier from 'prettier';
 import { pascalCase } from './helpers.js';
-import { prettierConfig, modelConfig } from './config.js';
+import { prettierConfig, generatorConfig } from './config.js';
 import { getEntity } from '@shotero/gen-schema';
 
 // load from import path
-const writeRoot = modelConfig.path.write;
-const importRoot = modelConfig.path.import;
+const writeRoot = generatorConfig.path.write;
+const importRoot = generatorConfig.path.import;
 
 function write(path, content) {
   fs.writeFile(path, content, (err) => {
@@ -256,7 +256,7 @@ function generateSchema(table, config, filepath) {
 }
 
 async function generate(override = {}) {
-  const config = Object.assign({}, modelConfig.config, override);
+  const config = Object.assign({}, generatorConfig.config, override);
   const schemas = config.schemas.map((i) => i.name);
   const db = await pgStructure.default(
     {

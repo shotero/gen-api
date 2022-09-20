@@ -17,6 +17,6 @@ const defaultPrettierConfig = {
 
 const schemaConfig = getConfig('genschema');
 const prettierConfig = getConfig('prettier') || defaultPrettierConfig;
-const modelConfig = Object.assign({}, schemaConfig, getConfig('genmodel'));
+const generatorConfig = Object.assign({}, schemaConfig, getConfig('generator'));
 
-export { schemaConfig, prettierConfig, modelConfig };
+export { schemaConfig, prettierConfig, generatorConfig };
