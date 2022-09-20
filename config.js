@@ -3,7 +3,7 @@ import path from 'node:path';
 
 function getConfig(config) {
   const explorer = cosmiconfigSync(config);
-  return explorer.search(path.dirname(process.cwd()));
+  return explorer.search(process.cwd());
 }
 
 const defaultPrettierConfig = {
