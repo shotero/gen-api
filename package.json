@@ -1,6 +1,6 @@
 {
-  "name": "@shotero/gen-model",
-  "description": "ObjectionJS model generator",
+  "name": "@shotero/gen-api",
+  "description": "ObjectionJS model and api generator from database",
   "type": "module",
   "version": "0.1.1",
   "author": "shotero <lemon.chiffon@shotero.com> (https://shotero.com)",
