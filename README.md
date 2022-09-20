@@ -1,10 +1,10 @@
-# Gen Model
+# Gen API
 
 Generate ObjectionJS models automatically from postgresql database
 
 ## Install
 
-`npm install @shotero/gen-model`
+`npm install @shotero/gen-api`
 
 ## Usage
 
@@ -12,16 +12,16 @@ Generate ObjectionJS models automatically from postgresql database
 - Create a generator script in your project repository with the following content
 
 ```js
-import { generateModel } from '@shotero/gen-model';
+import { generate } from '@shotero/gen-api';
 
-generateModel(config);
+generate();
 ```
 
 Run the script
 
 ## Example project:
 
-https://github.com/shotero/starter-backend
+https://github.com/shotero/mates-backend
 
 ## Configuration
 
@@ -29,6 +29,10 @@ https://github.com/shotero/starter-backend
 module.exports = {
   baseUrl: 'https://myproject.com',
   schemaVersion: 'http://json-schema.org/draft-07/schema#',
+  generate: {
+    controller: true,
+    route: true
+  },
   paths: {
     import: '#api',
     write: process.cwd()

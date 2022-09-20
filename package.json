@@ -5,7 +5,7 @@
   "version": "0.1.2",
   "author": "shotero <lemon.chiffon@shotero.com> (https://shotero.com)",
   "bugs": {
-    "url": "https://github.com/shotero/gen-model/issues",
+    "url": "https://github.com/shotero/gen-api/issues",
     "email": "lemon.chiffon@shotero.com"
   },
   "contributors": [
@@ -27,7 +27,7 @@
   "engines": {
     "node": ">= 18"
   },
-  "homepage": "https://github.com/shotero/gen-model",
+  "homepage": "https://github.com/shotero/gen-api",
   "keywords": [
     "postgresql",
     "db",
@@ -37,7 +37,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shotero/gen-model"
+    "url": "https://github.com/shotero/gen-api"
   },
   "scripts": {
     "dev": "node index.js",
