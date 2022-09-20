@@ -1,3 +1,13 @@
+## [0.1.2](https://github.com/shotero/gen-model/compare/v0.1.1...v0.1.2) (2022-09-20)
+
+
+### Features
+
+* change package name ([53fb16c](https://github.com/shotero/gen-model/commit/53fb16c67b37e489a1934f32cba0ad4e0bc94a99))
+* conditionally generate route and controller ([6db73c5](https://github.com/shotero/gen-model/commit/6db73c508b8c654134fb1eabc3612f33064172fd))
+
+
+
 ## [0.1.1](https://github.com/shotero/gen-model/compare/v0.1.0...v0.1.1) (2022-09-14)
 
 
